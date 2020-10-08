@@ -94,9 +94,22 @@ while response not in yes_no:
 print("Deeper in the cave is a dead body.\n hes holding a bag in his left hand. \n".title())
 shake_bag = input("do you search is bag?: yes/no ".title())
 if shake_bag == "yes":
-    print("in his bag you find a hunting knife and put in your backpack \n".title())
-    backpack.append("knife")
-    print(f" in your backpack you now have a {backpack[0]}.\n".title())
+    print("his bag has a lock on it. the code = the rgb code to make white")
+    lock = int(input("what is the code?:"))
+               
+    if lock == 225225225:
+        print("in his bag you find a hunting knife and put in your backpack \n".title())
+        backpack.append("knife")
+        print(f" in your backpack you now have a {backpack[0]}.\n".title())
+        
+                
+               
+    else:
+         print("wrong code, you do not open his bag and you continue your day.\n".title())
+           
+               
+ 
+    
 elif shake_bag == "no":
     print("you walk past the body, ignoring it and continue your day.\n".title())
 
@@ -153,5 +166,6 @@ print("and finally you escape and reach a small village bordering the forest.\n"
 print(f"congrats {name} you escaped the forest. GAME OVER!\n")
 quit()
     
+
 
 
